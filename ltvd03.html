@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Đăng Ký - Thiên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        td, th {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        input, select, textarea {
+            width: 95%;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 15px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>ĐĂNG KÝ - Thiên</h2>
+
+    <form method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>Họ tên</td>
+                <td><input type="text" name="full-name" required></td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Nhập lại mật khẩu</td>
+                <td><input type="password" name="confirm-password" required></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" name="gender" value="Nam" checked> Nam
+                    <input type="radio" name="gender" value="Nữ"> Nữ
+                    <input type="radio" name="gender" value="Khác"> Khác
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td>
+                    <select name="day">
+                        <option>01</option><option>02</option><option>03</option>
+                    </select>
+                    <select name="month">
+                        <option>01</option><option>02</option><option>03</option>
+                    </select>
+                    <select name="year">
+                        <option>2001</option><option>2002</option><option>2003</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><textarea name="address" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td>Avatar</td>
+                <td><input type="file" name="avatar"></td>
+            </tr>
+            <tr>
+                <td>Sở thích</td>
+                <td>
+                    <input type="checkbox" name="hobbies" value="Xem phim"> Xem phim
+                    <input type="checkbox" name="hobbies" value="Thể thao"> Thể thao
+                    <input type="checkbox" name="hobbies" value="Trò chơi"> Trò chơi
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="reset">Reset</button>
+                    <button type="submit">OK</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
